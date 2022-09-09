@@ -17,3 +17,14 @@ can be written as
 (_,y) => y + 1 since x isnt being used. 
 
 y + 1 means index + 1 which allows us to start the array from 1, going up by 1 each time.
+
+
+
+============
+another option is using a for loop that creates an array and pushes within the loop parameters
+
+function monkeyCount(n) {
+  for (var i = 0, arr = []; i < n; arr.push(++i));
+  
+  return arr;
+}
