@@ -1,0 +1,18 @@
+var rooms = {
+  bedroom: { 
+  name: 'bedroom',
+  description: 'sleep',
+  completed: true,
+},
+  bathroom:{
+    name: 'bathroom',
+  description: 'bath',
+  completed: true,
+},
+diningroom:{
+  name: 'diningroom',
+  description: 'dine',
+  completed: true,
+} 
+  
+}
