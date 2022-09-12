@@ -1,0 +1,10 @@
+function strCount(str, letter){  
+ let count = 0 
+for (let i = 0; i < str.length; i++){
+  if( str[i] === letter){count++}
+}
+  return count
+}
+
+loop runs for the length of the string
+if the element at str[i] equals letter then count + 1
