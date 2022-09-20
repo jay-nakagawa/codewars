@@ -1,0 +1,15 @@
+function getRealFloor(n) {
+if(n >= 13) return n - 2           
+if(n > 0) return n - 1
+
+return n   // must be included to account for basement floors, otherwise = undefined
+}
+
+==========
+
+
+function getRealFloor(n) {
+
+return n > 13 ? n - 2 : n > 0 ? n - 1 : n 
+
+}     // if n is greater than 13 => return n -2 => if its not greater than 13 then check if its greater than 0 => if greater than 0 (and less than 13) => return n - 1 => else return n
