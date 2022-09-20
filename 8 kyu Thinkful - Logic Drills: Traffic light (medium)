@@ -1,0 +1,22 @@
+function updateLight(current) {
+  
+return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green' 
+
+}
+
+
+========
+
+
+function updateLight(current) {
+return ({
+green : 'yellow', 
+yellow : 'red',
+red: 'green',  
+  
+})[current]
+  
+
+}
+
+//create an object then use bracket notation to access the object
