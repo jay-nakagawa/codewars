@@ -1,0 +1,10 @@
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  
+  return birds.filter(b => !geese.includes(b))
+};
+
+
+argument birds is an array.
+filter creates a new array from birds with all the elements that pass the test states inside the brackets.
+the test goes through the array (geese) and removes all the elements in birds, that are also found in the array (geese)
