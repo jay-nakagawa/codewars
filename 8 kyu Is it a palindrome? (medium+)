@@ -1,0 +1,7 @@
+function isPalindrome(x) {
+  return x.split('').reverse().join('').toLowerCase() === x.toLowerCase()
+}
+
+///////
+x.reverse() does not work because x is a string, not an array.
+make sure to include '' when splitting and joining or the method will not work properly
