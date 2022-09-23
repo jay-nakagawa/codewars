@@ -1,0 +1,11 @@
+function getAge(inputString){
+return Number(inputString[0])
+}
+
+=============
+
+function getAge(inputString){
+  return parseInt(inputString);
+}
+
+////parseInt() parses a string and returns an integer
