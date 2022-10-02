@@ -1,0 +1,7 @@
+function removeEveryOther(arr){
+return arr.filter((x , y) => y % 2 === 0)
+}
+
+//filter creates a new array from the elements that pass the test
+// the test is element % 2 === 0
+// this targets every other element starting from index 0
