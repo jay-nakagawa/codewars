@@ -1,0 +1,14 @@
+const sumOfDifferences = arr => arr
+  .sort((a, b) => b - a)   //sorts greatest to least = [10, 2, 1]
+  .map((a, i) => a - arr[i + 1] || 0) //** [8,1,0]
+ .reduce((a, b) => a + b,0) // initial value of 0 incase an array with no values is passed in.
+ 
+ 
+ 
+ 
+ // map creates a new array after applying the results of (a - arr[i + 1]) this means each element is subtracted the value of the element in the next index or 0 if there is no additional element
+ = a - arr[ i + 1 ] || 0
+ = 10 - arr[ 0 + 1 ] || 0
+ = 10 - arr[1] || 0
+ =10 - 2 || 0 ......
+ 
