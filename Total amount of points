@@ -1,0 +1,19 @@
+function points(games) {
+  let sum=0;
+ games.map( game => {
+   if (game[0] > game[2]) {
+     sum += 3
+   }else if (game[0] === game[2]) {
+     sum += 1
+ }})
+   return sum
+}
+
+
+// create a counter starting at 0
+// go through the array and perform the follow series of checks
+
+// if team 1 score is greater than team 2 score sum += 3
+//if team 1 scpre is equal to team 2 score then sum +=1
+
+// the scvores are access by writing game[0] and game[2] because each element is written as 'x:y' or 'game[0]:game[2]
