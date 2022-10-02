@@ -1,0 +1,8 @@
+function defineSuit(card) {
+  if (card.includes('♣')) return 'clubs'
+  if (card.includes('♦')) return 'diamonds'
+  if (card.includes('♥')) return 'hearts'
+  if (card.includes('♠')) return 'spades'
+}
+
+//includes() checks wether or not an array element contains a value and returns true or false. if includes() === true then the corresponding string is returned
