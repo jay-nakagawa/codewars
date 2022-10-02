@@ -1,0 +1,12 @@
+function stringy(size) {
+  let str = ''
+  for(let i = 1; i <= size; i++){
+   str += i % 2
+  }
+  return str
+}
+
+
+// answer must be a string
+// i % 2 will return either 1 or 0 depending on if i is equal or off
+// the result of i % 2 is placed into the variable str
