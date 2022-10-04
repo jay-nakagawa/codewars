@@ -1,0 +1,4 @@
+function capitalizeWord(word) {
+ let W =  word[0].toUpperCase();
+  return  W + word.slice(1);
+}
