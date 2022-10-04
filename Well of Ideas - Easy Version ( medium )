@@ -1,0 +1,9 @@
+function well(x){
+  
+let goodCounter = x.filter(x => x === 'good').length
+
+if(goodCounter >= 3){  return 'I smell a series!'}
+else if( goodCounter >= 1){ return 'Publish!' }
+else{return 'Fail!'}
+  
+}
