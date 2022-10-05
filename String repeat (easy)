@@ -1,0 +1,6 @@
+function repeatStr (n, s) {
+  return s.repeat(n)
+  
+}
+
+//repeat the string (s) a number (n) of times
