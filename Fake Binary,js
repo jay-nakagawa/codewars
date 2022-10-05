@@ -1,0 +1,12 @@
+function fakeBin(x){
+return x.split('').map(x => x < 5 ? 0 : 1).join('')
+}
+
+//split, then map using a ternary selector.
+// if x < 5 ? return 0 : else return 1
+// join
+
+//another solution using replace
+function fakeBin(x){
+  return x.replace( /[0-4]/g, "0" ).replace( /[5-9]/g, "1" )
+}
