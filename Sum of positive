@@ -1,0 +1,5 @@
+function positiveSum(arr) {
+  return arr.reduce((x,y) => x + (y > 0 ? y : 0 ),0)
+}
+
+//reduce array by summing. passing in a ternary that only sums if element is greater than 0
