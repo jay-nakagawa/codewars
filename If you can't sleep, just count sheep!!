@@ -1,0 +1,10 @@
+var countSheep = function (num){
+let str = ''
+  for(let i = 1 ; i <= num; i ++){
+  str += `${i} sheep...`
+}
+  return str
+}
+
+//create an empty string to account for the case where the arguement is 0
+// put the results of the loop into the str
