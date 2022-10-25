@@ -1,0 +1,6 @@
+function abbrevName(name){
+ let split = name.split(' ')
+return `${split[0][0]}.${split[1][0]}`.toUpperCase()
+}
+
+//[0][0] and [1][0] allows you to access specific elements in the array
