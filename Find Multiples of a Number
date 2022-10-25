@@ -1,0 +1,13 @@
+function findMultiples(int, limit) {
+  let arr = []
+  for(let i = int; i <= limit; i += int ){
+    arr.push(i)
+  }
+  return arr
+}
+
+
+// create a for loop
+// initial value = int
+//loop runs until value is equal to limit
+// i goes up by int each iteration 
