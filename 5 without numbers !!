@@ -1,0 +1,4 @@
+function unusualFive() {
+  let s = 'asdfg'
+  return s.length
+}
