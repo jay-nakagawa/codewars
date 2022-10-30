@@ -1,0 +1,9 @@
+function getSize(width, height, depth){
+ 
+  let answerArr = []
+  answerArr.push(2*(width*height + width*depth + height*depth))  
+  answerArr.push(width*height*depth)
+  return answerArr
+  
+  
+}
