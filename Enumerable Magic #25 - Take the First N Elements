@@ -1,0 +1,7 @@
+function take(arr, n) {
+  let holder = []
+  for(let i = 0; i < n; i++){
+    holder.push(arr[i])
+  }
+  return holder
+}
