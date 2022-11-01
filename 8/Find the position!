@@ -1,0 +1,11 @@
+function position(letter){
+return `Position of alphabet: ${letter.charCodeAt() - 96}`
+}
+
+
+// goal is to take a letter and return the letters place in the alphabet as a number value
+// ie. a = 1 , b = 2.
+
+//charCodeAt() gives us the utf-16 number associated with whatever value is passed in
+// if you look at a utf chart you can see that the numbers associated with the alphabet start at 97...... so 97 = a , 98 - b
+// if we subtract 96 from charCodeAt it will give us the values we are looking for.
