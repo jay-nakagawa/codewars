@@ -1,0 +1,5 @@
+function arrayMadness(a, b) {
+  let sumofA = a.map(x => x*x).reduce((a,b) => a + b)
+  let sumofB = b.map(x => x*x*x).reduce((a,b) => a + b)
+  return sumofA > sumofB
+}
