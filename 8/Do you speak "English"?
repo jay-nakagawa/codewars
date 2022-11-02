@@ -1,0 +1,4 @@
+function spEng(sentence){
+if (sentence.match(/english/i)){return true}
+  else{return false}
+}
