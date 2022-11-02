@@ -1,0 +1,7 @@
+function  calculateAge(birth, current) {
+  
+if( birth === current) {return 'You were born this very year!'}
+  else if( birth > current ) { return birth - current > 1 ?  `You will be born in ${birth - current} years.` : `You will be born in 1 year.`}
+else if( birth < current) {return current - birth > 1 ? `You are ${current - birth} years old.` : `You are 1 year old.`}
+}
+
