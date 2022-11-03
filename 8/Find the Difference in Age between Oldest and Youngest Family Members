@@ -1,0 +1,6 @@
+function differenceInAges(ages){
+let sortedAges = ages.sort((a,b) => a - b)
+let diff = sortedAges[sortedAges.length-1] - sortedAges[0]
+return [sortedAges[0], sortedAges[sortedAges.length-1], diff]
+}
+
