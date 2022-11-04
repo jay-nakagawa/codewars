@@ -1,0 +1,11 @@
+function array(arr){
+if (arr.length < 5){return null}  
+return arr.length >= 5 ? arr.split(',').slice(1, -1).join(' ') : null
+}
+
+//this was throwing errors and returning '' instead of null in certain cases
+
+function array(arr){
+  return arr.split(',').slice(1,-1).join(' ') || null
+
+}
