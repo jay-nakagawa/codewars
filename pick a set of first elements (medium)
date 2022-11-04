@@ -1,0 +1,11 @@
+function first(arr, n) {
+ if (n === undefined) {return [arr[0]]}
+  else if( n !== undefined) {return arr.slice(0,n)}
+}
+
+// can be refactored as
+
+function first(arr, n=1) {
+ 
+  return arr.slice(0,n)
+}
