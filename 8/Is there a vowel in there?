@@ -1,0 +1,11 @@
+function isVow(a){
+return a.map(x => /[aeiou]/.test(String.fromCharCode(x)) ? String.fromCharCode(x) : x)
+}
+
+//goal is to take an array of numbers, check if any of the numbers correspond with the utf 16 char codes for vowels aeiou. if true then replace the number with the vowel, if false then leave the number.
+
+//map allows us to apply a function to each element in the array.
+//using string.fromcharcode(x) we take the number and convert it to a letter. 
+// test checks if the converted letter is a vowel.
+// if convertedx = a vowel then we String.fromCharCode(x) giving us the corresponding vowel
+// else we leave the element as is.
