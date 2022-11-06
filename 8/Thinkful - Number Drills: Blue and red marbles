@@ -1,0 +1,5 @@
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  let total = blueStart + redStart
+  let blueLeft = blueStart - bluePulled
+  return blueLeft / (total - bluePulled - redPulled)
+}
