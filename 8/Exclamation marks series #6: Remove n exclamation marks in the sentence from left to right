@@ -1,0 +1,10 @@
+function remove(s,n){
+for(let i = 0; i<n; i++){
+  s = s.replace('!', '')
+}  
+  return s
+}
+
+*loop until n and replace() every iteration
+*replace will act on the first occurence of the matching pattern
+*replace('!',") to remove ! was not obvious to me.
