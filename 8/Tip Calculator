@@ -1,0 +1,20 @@
+function calculateTip(amount, rating) {
+ let x = 0
+ rating = rating.toLowerCase()
+  switch (rating){
+      case 'excellent' : x = .20
+      break
+      case 'great' : x = .15
+      break
+      case 'good' : x = .10
+      break
+      case 'poor' : x = .05
+      break
+      case 'terrible' : x = 0
+      break
+      default:return "Rating not recognised"
+      
+      
+  }
+  return Math.ceil(x * amount)
+}
