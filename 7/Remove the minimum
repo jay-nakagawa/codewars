@@ -1,0 +1,6 @@
+function removeSmallest(numbers) {
+  let copy = numbers.slice(0)
+  let index = numbers.indexOf(Math.min(...numbers))
+  copy.splice(index,1)
+  return copy
+}
