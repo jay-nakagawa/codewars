@@ -1,0 +1,5 @@
+var isAnagram = function(t, o) {
+  t= t.toLowerCase()
+  o= o.toLowerCase()
+return o.split('').sort().join('') == t.split('').sort().join('')
+};
