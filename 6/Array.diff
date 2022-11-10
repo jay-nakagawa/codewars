@@ -1,0 +1,6 @@
+function arrayDiff(a, b) {
+  return a.filter(x => !b.includes(x))
+}
+
+** filter gives an array that only contains the elements that pass the test that is given
+** here we are using includes with ! to remove values from a that are present in b.
