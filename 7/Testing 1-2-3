@@ -1,0 +1,8 @@
+var number=function(array){
+  let arr = []
+  
+  array.map((x,i) => arr.push(`${i + 1}: ${x}`))
+  
+  return arr
+  
+}
