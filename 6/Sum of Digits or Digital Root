@@ -1,0 +1,14 @@
+function digitalRoot(n) {
+
+  n = n.toString().split('').map(Number).reduce((a,b)=>a+b)
+  
+return n > 9 ? digitalRoot(n) : n
+ 
+ 
+}
+
+
+* task it to take n, split the digits, sum them and repeat until n is <= 9
+* convert numbers to string so they can be split.
+*map them converts the array of strings into numbers so they can be reduced by summing them.
+*ternary operator to check if n > 9 ? if n > 9 then we re-run the function else we return n
