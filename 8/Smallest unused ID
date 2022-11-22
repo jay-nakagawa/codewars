@@ -1,0 +1,6 @@
+function nextId(ids){
+  let nums = new Set(ids)
+  for(let i=0;i<=ids.length;i++){
+    if(!nums.has(i)) {return i}
+  }
+}
