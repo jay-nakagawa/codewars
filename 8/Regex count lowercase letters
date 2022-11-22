@@ -1,0 +1,6 @@
+function lowercaseCount(str){
+   return (str.match(/[a-z]/g) || []).length
+}
+
+
+//if str....length is null then return [].length
