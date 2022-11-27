@@ -1,0 +1,6 @@
+function mango(quantity, price){
+  console.log(quantity)
+  console.log(price)
+return ( quantity*price)- (Math.floor(quantity/3)*price)
+  
+}
