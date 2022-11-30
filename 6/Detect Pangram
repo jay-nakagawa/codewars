@@ -1,0 +1,4 @@
+function isPangram(string){
+  let x = string.toLowerCase().split('').filter(x => /[A-Za-z]/g.test(x))
+  return [...new Set(x)].length === 26
+}
