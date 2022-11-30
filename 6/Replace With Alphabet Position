@@ -1,0 +1,3 @@
+function alphabetPosition(text) {
+  return text.toLowerCase().split('').filter(x => /[a-z]/.test(x)).map(x=>x.charCodeAt(0)-96).join(' ')
+}
