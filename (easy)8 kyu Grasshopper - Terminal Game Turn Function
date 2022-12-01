@@ -6,3 +6,5 @@ function doTurn () {
   buyHealth()
   printStatus()
 }
+
+1
