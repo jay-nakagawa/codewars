@@ -1,0 +1,7 @@
+function sumDigPow(a, b) {
+  let ans = []
+  for(let i=a;i<b;i++){
+    if(i.toString().split('').reduce((x,y,z)=>+x + y**(z+1),0) == i){ans.push(i)}
+  }
+  return ans
+}
