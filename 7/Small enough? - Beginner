@@ -1,0 +1,4 @@
+function smallEnough(a, limit){
+  a.sort((x,y)=>x-y)
+  return a[a.length-1] <= limit
+}
