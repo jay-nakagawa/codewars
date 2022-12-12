@@ -1,0 +1,6 @@
+function sumDigits(number) {
+  let arr = Math.abs(number).toString().split('').map(x=> Number(x))
+  let x = arr.reduce((a,b)=>a+b,0)
+  console.log(x)
+  return x
+}
