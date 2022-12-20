@@ -1,0 +1,6 @@
+function inAscOrder(arr) {
+  let x = [...arr].join('')
+  let y = arr.sort((a,b)=>a-b).join('')
+  console.log(x,y)
+  return x === y 
+}
