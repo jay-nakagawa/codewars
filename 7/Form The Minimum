@@ -1,0 +1,4 @@
+function minValue(values){
+  let uniqNums = [...new Set(values)]
+  return +uniqNums.sort((a,b)=>a-b).join('')
+}
