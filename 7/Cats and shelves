@@ -1,0 +1,5 @@
+function solution(start, finish) 
+{
+ let diff = finish - start
+ return Math.floor(diff/3 + diff%3)
+}
