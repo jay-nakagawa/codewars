@@ -1,0 +1,7 @@
+function pointsPer48(ppg, mpg) {
+return ppg === 0? 0 : Math.round((ppg/mpg*48)*10)/10
+  
+
+  
+  
+}
