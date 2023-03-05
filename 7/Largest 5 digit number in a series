@@ -1,0 +1,10 @@
+function solution(digits){
+ let largestSequence = 0
+  for(let i =0;i<digits.length;i++){
+    let currentSequence= digits.slice(i,(i+5))
+    if (currentSequence > largestSequence){
+      largestSequence= +currentSequence
+    }
+  }
+  return largestSequence
+}
