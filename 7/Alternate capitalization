@@ -1,0 +1,16 @@
+function capitalize(s){
+  let stringOne = ""
+  let stringTwo = ""
+  
+  for(let i=0;i<s.length;i++){
+    if(i%2===0){
+      stringOne += s[i].toUpperCase()
+      stringTwo += s[i].toLowerCase()
+    }
+    else{
+      stringOne+= s[i].toLowerCase()
+      stringTwo+= s[i].toUpperCase()
+    }
+  }
+  return [stringOne,stringTwo]
+};
