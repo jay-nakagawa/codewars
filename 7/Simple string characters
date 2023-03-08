@@ -1,0 +1,10 @@
+function solve(s){
+ if (s === "") {return [0,0,0,0]}
+ let upper = s.match(/[A-Z]/g) ? s.match(/[A-Z]/g).length : 0
+ let lower = s.match(/[a-z]/g) ? s.match(/[a-z]/g).length : 0
+ let num = s.match(/[0-9]/g) ? s.match(/[0-9]/g).length : 0
+ let special = s.match(/\W|_/g) ? s.match(/\W|_/g).length : 0
+ 
+     
+ return [upper,lower, num,special]
+}
