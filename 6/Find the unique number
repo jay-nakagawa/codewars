@@ -1,0 +1,9 @@
+function findUniq(arr) {
+ let mySet = [...new Set(arr)]
+ let arr1 = arr.map(x => x === mySet[0])
+ let arr2 = arr.map(x => x === mySet[1])
+ console.log("length 1",arr1.filter(Boolean).length)
+  console.log("length 2",arr2.filter(Boolean).length)
+ return arr1.filter(Boolean).length < arr2.filter(Boolean).length ? mySet[0] : mySet[1]
+ console.log("1", arr1,"2",arr2)
+}
