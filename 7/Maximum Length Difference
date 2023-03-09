@@ -1,0 +1,8 @@
+function mxdiflg(a1, a2) {
+   let numX = a1.map(x=> x.length).sort((a,b)=>a-b)
+   let numY = a2.map(x=> x.length).sort((a,b)=>a-b)
+   console.log(a1,a2)
+  console.log("sorted", numX, numY)
+  if (a1.length ===0 || a2.length=== 0){return -1}
+ return Math.abs(numX[numX.length-1]-numY[0]) > Math.abs(numX[0]-numY[numY.length-1]) ? Math.abs(numX[numX.length-1]-numY[0]) :Math.abs(numX[0]-numY[numY.length-1])
+}
