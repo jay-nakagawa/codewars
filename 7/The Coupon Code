@@ -1,0 +1,9 @@
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  currentDate = Date.parse(currentDate)
+  expirationDate = Date.parse(expirationDate)
+  
+  if(enteredCode === correctCode && currentDate<=expirationDate){
+    return  true
+  }
+  return false
+}
