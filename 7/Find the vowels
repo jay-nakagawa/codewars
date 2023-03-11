@@ -1,0 +1,13 @@
+function vowelIndices(word){
+  let str = word.split('')
+  let arr = []
+  console.log(str.length)
+  
+ for(let i=0; i<str.length;i++){
+  
+  
+   if(/[aeiouy]/gi.test(str[i])){arr.push(i+1)}
+ }
+  
+  return arr
+}
