@@ -1,0 +1,12 @@
+function sumTriangularNumbers(n) {
+  if(n<=0){return 0}
+  
+  let sum = 1
+  let newAddition = 2
+  let counter = 1
+  for(let i = 1;newAddition<=n;newAddition++){
+    sum += newAddition
+    counter += sum
+  }
+  return counter
+}
