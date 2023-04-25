@@ -1,0 +1,25 @@
+function duplicateCount(text) {
+  // Convert the string to lowercase for case-insensitive comparison
+  text = text.toLowerCase();
+  
+  // Create an object to store the count of each character in the string
+  let charCount = {}
+  
+for(let char of text){
+  if(char in charCount){
+    charCount[char]++
+  }else{
+    charCount[char] = 1
+  }
+}
+  console.log(charCount)
+  // Count the number of characters that appear more than once
+  let duplicateCount = 0
+for(let count of Object.values(charCount)){
+  if(count>1) {
+    duplicateCount++
+  }
+}
+  
+  return duplicateCount;
+}
