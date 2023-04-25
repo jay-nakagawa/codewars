@@ -1,0 +1,46 @@
+function encrypt(text, n) {
+  
+ if (!text || n <= 0) {
+    return text;
+  }
+  
+  while(n--){
+    let even = ""
+    let odd = ""
+    
+    for(let i=0;i<text.length;i++){
+      if(i%2===0){
+        even+=text[i]
+      }else{
+        odd+=text[i]
+      }
+    }
+    text = odd + even
+    }
+  return text
+}
+
+function decrypt(encryptedText, n) {
+  if (encryptedText === null || encryptedText === '') {
+    return encryptedText;
+  }
+
+  const len = encryptedText.length;
+  const mid = Math.floor(len / 2);
+
+  for (let i = 0; i < n; i++) {
+    let even = encryptedText.slice(mid);
+    let odd = encryptedText.slice(0, mid);
+    encryptedText = '';
+
+    for (let j = 0; j < mid; j++) {
+      encryptedText += even[j] + odd[j];
+    }
+
+    if (len % 2 !== 0) {
+      encryptedText += even[even.length - 1];
+    }
+  }
+
+  return encryptedText;
+}
