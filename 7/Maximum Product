@@ -1,0 +1,8 @@
+function adjacentElementsProduct(array) {
+
+  
+  let arr = array.map((x,i)=> x * array[i+1] ).filter(Boolean)
+  if (arr.length===0) {return 0}
+  console.log(arr)
+  return Math.max(...arr)
+}
