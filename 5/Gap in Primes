@@ -1,0 +1,28 @@
+function gap(g, m, n) {
+  let lastPrime = 0;
+  let arr = []
+  
+  
+  const isPrime = num => {
+    for(let i = 2; i <= Math.sqrt(num); i++) {
+      if(num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  for(let i = m; i <= n; i++) {
+    if(isPrime(i)) {
+     arr.push(i)
+    }
+  }
+  
+  for(let i=0;i<arr.length;i++){
+    if(arr[i+1]-arr[i]===g){
+      return [arr[i],arr[i+1]]
+    }
+  }
+
+  return null;
+}
