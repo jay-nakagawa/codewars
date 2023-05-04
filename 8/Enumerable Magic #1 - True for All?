@@ -1,0 +1,4 @@
+function all( arr, fun ){
+  console.log(fun)
+  return arr.filter(x=> !fun(x)).length === 0
+}
