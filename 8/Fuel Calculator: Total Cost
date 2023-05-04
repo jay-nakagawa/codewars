@@ -1,0 +1,27 @@
+function fuelPrice(litres, pricePerLitre) {
+  let discount = 0;
+  switch (Math.floor(litres / 2)) {
+    case 0:
+      // no discount
+      break;
+    case 1:
+      discount = 0.05;
+      break;
+    case 2:
+      discount = 0.1;
+      break;
+    case 3:
+      discount = 0.15;
+      break;
+    case 4:
+      discount = 0.2;
+      break;
+    default:
+      discount = 0.25;
+      break;
+  }
+    
+ return +(litres * (pricePerLitre - discount)).toFixed(2)
+}
+
+
