@@ -1,0 +1,10 @@
+function periodIsLate(last, today, cycleLength) {
+  
+const diffInMs = Math.abs(last.getTime() - today.getTime());
+const diffInDays = Math.floor(diffInMs / 86400000);
+  
+  console.log(diffInDays)
+  
+  return cycleLength < diffInDays 
+  
+}
