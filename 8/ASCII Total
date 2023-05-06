@@ -1,0 +1,5 @@
+function uniTotal (string) {
+  if (string === "") return 0
+return string.split('').reduce((acc,cv)=>
+  acc + cv.charCodeAt(0),0                            )
+}
