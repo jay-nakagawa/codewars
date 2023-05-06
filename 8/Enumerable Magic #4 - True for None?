@@ -1,0 +1,5 @@
+function none(arr, fun){
+ if(arr.map(x=> !fun(x)).indexOf(false) === -1) return true
+return false
+  
+}
