@@ -1,0 +1,6 @@
+function aliasGen(first,last){
+  let firstInitial = first[0].toUpperCase()
+  let secondInitial = last[0].toUpperCase()
+  if(firstInitial>0 || secondInitial>0) return 'Your name must start with a letter from A - Z.'
+  return `${firstName[firstInitial]} ${surname[secondInitial]}`
+}
