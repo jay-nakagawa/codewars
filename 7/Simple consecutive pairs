@@ -1,0 +1,19 @@
+function pairs(ar){
+const pairs = []
+let counter = 0
+
+ for (let i = 0; i < ar.length; i += 2) {
+  pairs.push(ar.slice(i, i + 2));
+}
+   pairs.forEach(([a,b])=>{
+     
+    if (Math.abs(b-a) === 1 ){
+      
+      counter++
+      
+    }
+    
+  })
+  
+  return counter
+};
