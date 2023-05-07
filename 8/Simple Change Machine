@@ -1,0 +1,31 @@
+function changeMe(moneyIn){
+  let accepted = ['£5', "£2", "£1", "50p", "20p"]
+  if (!accepted.includes(moneyIn)){
+   return moneyIn
+  }
+  let pence = 0  
+  let change = ""
+  
+  if (moneyIn === "£5"){pence = 500} 
+  if (moneyIn === "£2"){pence = 200}
+  if (moneyIn === "£1"){pence = 100}
+  if (moneyIn === "50p"){pence = 50} 
+  if (moneyIn === "20p"){return "10p 10p"}
+  console.log(pence)
+  
+  while(pence>0){
+    
+    if(pence>=20){
+      pence -= 20
+      change += "20p "
+    }else if(pence>=10){
+      pence -= 10
+      change += "10p"
+    }
+    
+  }
+  
+  return change.trim()
+  
+  
+}
