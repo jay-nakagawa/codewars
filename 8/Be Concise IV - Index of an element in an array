@@ -1,0 +1,5 @@
+function find(a, e) {
+ let i = a.indexOf(e)
+ if(i===-1)return "Not found"
+ return i
+}
