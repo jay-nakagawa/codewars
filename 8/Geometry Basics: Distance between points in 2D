@@ -1,0 +1,7 @@
+function distanceBetweenPoints(a, b) {
+
+  const deltaX = b.x - a.x;  
+  const deltaY = b.y - a.y;  
+  const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+  return distance;
+}
