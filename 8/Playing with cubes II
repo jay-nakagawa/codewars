@@ -1,0 +1,7 @@
+function isPythagoreanTriple(integers) {
+  let int = integers.map(x => x**2)
+  if(int[0]+int[1]===int[2]) return true
+  if(int[0]+int[2]===int[1]) return true
+  if(int[1]+int[2]===int[0]) return true
+  return false
+}
