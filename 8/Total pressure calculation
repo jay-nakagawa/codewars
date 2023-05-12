@@ -1,0 +1,14 @@
+solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
+  const n1 = givenMass1 / molarMass1;
+  const n2 = givenMass2 / molarMass2;
+  const ntotal = n1 + n2;
+console.log(`n1: ${n1}, n2: ${n2}`)
+  let v = volume 
+  let t = temp + 273.15
+  const R = .082; // J/(mol*K)
+  const Ptotal = (ntotal * R * t) / v;
+  console.log(`Ptotal: ${Ptotal}`);
+
+  return Ptotal;
+  
+}
