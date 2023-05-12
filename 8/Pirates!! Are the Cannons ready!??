@@ -1,0 +1,6 @@
+const cannonsReady = (gunners) => {
+ for(const response of Object.values(gunners)){
+   if(response === "nay"){return "Shiver me timbers!"}
+ }
+  return "Fire!"
+}
