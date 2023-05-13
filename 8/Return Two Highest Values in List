@@ -1,0 +1,7 @@
+function twoHighest(arr) {
+  if(arr.length===0) return []
+  if(arr.length===1) return arr
+  let mySet = new Set(arr.sort((a,b)=> b-a))
+  let [firstValue, secondValue] = mySet.values();
+  return [firstValue, secondValue]
+}
