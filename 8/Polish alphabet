@@ -1,0 +1,17 @@
+function correctPolishLetters (string) {
+  
+ const polishCharacterMapping = {
+    'ą': 'a',
+    'ć': 'c',
+    'ę': 'e',
+    'ł': 'l',
+    'ń': 'n',
+    'ó': 'o',
+    'ś': 's',
+    'ź': 'z',
+    'ż': 'z'
+  };
+  
+  let str = string.replace(/[ąćęłńóśźż]/g, (x) => polishCharacterMapping[x])
+  return str
+}
