@@ -1,0 +1,47 @@
+class God {
+  static create() {
+    const adam = new Man("Adam", 30);
+    const eve = new Woman("Eve", 28);
+    return [adam, eve];
+  }
+}
+
+class Human {
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  introduce() {
+    console.log(`Hi, my name is ${this.name} and I'm ${this.age} years old.`);
+  }
+}
+
+class Man extends Human {
+  constructor(name, age) {
+    super(name, age, "Male");
+  }
+}
+
+class Woman extends Human {
+  constructor(name, age) {
+    super(name, age, "Female");
+  }
+}
+
+
+////////
+class God{
+/**
+ * @returns Human[]
+ */
+  static create(){
+    return [new Man, new Woman]
+  }
+}
+
+class Human{}
+class Man extends Human{}
+class Woman extends Human{}
+// code
