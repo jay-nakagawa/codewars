@@ -1,0 +1,8 @@
+function parseF(s) {
+  console.log("s",s)
+  console.log(typeof(s))
+  if (s === false) return null
+  if (s == 0 ) return 0
+  else console.log("float",parseFloat(s))
+  return parseFloat(s) || null
+}
