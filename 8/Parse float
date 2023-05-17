@@ -6,3 +6,11 @@ function parseF(s) {
   else console.log("float",parseFloat(s))
   return parseFloat(s) || null
 }
+
+
+////////
+
+function parseF(s) {
+  console.log(typeof(s))
+  return isNaN(parseFloat(s)) ?  null : parseFloat(s) 
+}
