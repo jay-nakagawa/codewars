@@ -1,0 +1,4 @@
+function multiply(number){
+  let power = Math.abs(number).toString().split("").length  
+  return number * 5 ** power
+}
