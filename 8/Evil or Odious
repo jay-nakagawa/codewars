@@ -1,0 +1,8 @@
+function evil(n) {
+  let bin = n.toString(2).match(/1/g).length
+  console.log(n)
+  console.log("binary",n.toString(2))
+  if (bin % 2 === 0 ) return "It's Evil!"
+  return "It's Odious!"
+  
+}
