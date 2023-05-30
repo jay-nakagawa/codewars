@@ -1,0 +1,16 @@
+function sc(floor){
+  let str = ''
+  if(floor <= 1) return ""
+  if(floor > 6 ){
+    for(let i = 1; i < floor; i++){
+      str += "Aa~ "
+    }
+    return str + "Pa!"
+  }
+  else{
+    for(let i = 1; i < floor; i++){
+      str += "Aa~ "
+    }
+    return str + "Pa! Aa!"
+  }
+}
