@@ -1,0 +1,11 @@
+function fiveLine(s){
+ let str = s.trim()
+ let ans = []
+ console.log(str)
+ for(let i = 0;i < 5;i++){
+   ans.push(str.repeat(i+1))
+   }
+  
+ return ans.join("\n")
+  
+}
